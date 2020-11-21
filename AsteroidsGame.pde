@@ -34,6 +34,6 @@ public void keyPressed()
   {
     david.accelerate(0);
     david.turn((int)(Math.random()*361));
-    
+    david.hyperspace();
   }
 }
