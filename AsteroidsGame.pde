@@ -2,6 +2,7 @@ Spaceship david = new Spaceship();
 public void setup() 
 {
   size(500,500);
+  background(0);
   david.accelerate(2);
 }
 public void draw() 
