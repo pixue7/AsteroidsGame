@@ -2,6 +2,7 @@ Spaceship david = new Spaceship();
 public void setup() 
 {
   size(500,500);
+  david.accelerate(2);
 }
 public void draw() 
 {
@@ -16,24 +17,23 @@ public void draw()
 
 public void keyPressed()
 {
-  if(key == 'h')
-  {
-    david.setXspeed(0);
-  }
   if(key == 'a')
   {
-    
+    david.turn(-3.0);
   }
   if(key == 'w')
   {
-    
+    david.move();
+    david.accelerate(.05);
   }
   if(key == 'd')
   {
-    
+    david.turn(3.0);
   }
   if(key == 's')
   {
+    david.accelerate(0);
+    david.turn((int)(Math.random()*361));
     
   }
 }
