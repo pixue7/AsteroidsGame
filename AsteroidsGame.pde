@@ -10,8 +10,8 @@ public void draw()
   david.show();
   for(int i = 0; i < 200; i++)
   {
-    Star david = new Star();
-    david.show();
+    Star David = new Star();
+    David.show();
   }
 }
 
