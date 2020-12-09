@@ -1,4 +1,5 @@
 Spaceship david = new Spaceship();
+Asteroid lily = new Asteroid();
 public void setup() 
 {
   size(500,500);
@@ -13,6 +14,9 @@ public void draw()
     Star sherry = new Star();
     sherry.show();
   }
+  lily.show();
+  lily.move();
+  lily.turn((int)(Math.random()*50));
 }
 
 public void keyPressed()
@@ -36,3 +40,4 @@ public void keyPressed()
     david.turn((int)(Math.random()*361));
     david.hyperspace();
   }
+}
