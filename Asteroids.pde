@@ -1,8 +1,9 @@
-class Asteriod extends Floater
+class Asteroid extends Floater
 {
-  private int myX, myY;
-  public Asteriod(){
-    myX = (int)(Math.random()*500);
-    myY = (int)(Math.random()*500);
+  private int mySpeed, myRotation;
+  public Asteroid(){
+    mySpeed = (int)(Math.random()*500);
+    myRotation = (int)(Math.random()*500);
   }
+
 }
